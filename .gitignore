@@ -1,0 +1,7 @@
+.env
+php/uploads/*
+!php/uploads/.gitkeep
+.DS_Store
+Thumbs.db
+node_modules/
+coverage/

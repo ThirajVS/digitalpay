@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">DigitalPay logo</title>
+  <defs>
+    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f6bff"/>
+      <stop offset="1" stop-color="#18b6a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#0b1739"/>
+  <path d="M17 18h18c9.4 0 16 5.4 16 14s-6.6 14-16 14H17V18Zm10 8v12h7.5c4.1 0 6.5-2.1 6.5-6s-2.4-6-6.5-6H27Z" fill="url(#g)"/>
+  <circle cx="47" cy="17" r="5" fill="#8bf0df"/>
+</svg>

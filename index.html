@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DigitalPay is a polished academic digital payment management system covering nine full-stack laboratory experiments.">
+  <meta name="theme-color" content="#0b1739">
+  <title>DigitalPay — Digital Payment Management System</title>
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="demo-banner"><strong>Demo / Academic Payment Environment</strong> — Never enter real card numbers, PINs, passwords or OTPs.</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="DigitalPay home"><img src="images/logo-mark.svg" alt=""><span>Digital<span>Pay</span></span></a>
+      <nav class="site-nav" data-site-nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" data-nav-page="home" href="index.html">Home</a></li>
+          <li><a class="nav-link" data-nav-page="dashboard" href="dashboard.html">Dashboard</a></li>
+          <li><a class="nav-link" data-nav-page="wallet" href="wallet.html">Wallet</a></li>
+          <li><a class="nav-link" data-nav-page="payments" href="payments.html#send-money">Send Money</a></li>
+          <li><a class="nav-link" href="payments.html#pay-bills">Pay Bills</a></li>
+          <li><a class="nav-link" href="payments.html#beneficiaries">Beneficiaries</a></li>
+          <li><a class="nav-link" data-nav-page="transactions" href="transactions.html">Transactions</a></li>
+          <li class="nav-more">
+            <button class="nav-more-toggle" type="button" aria-expanded="false">More</button>
+            <ul class="nav-dropdown">
+              <li><a class="nav-link" data-nav-page="reports" href="reports.html">Reports</a></li>
+              <li><a class="nav-link" href="#offers">Offers</a></li>
+              <li><a class="nav-link" data-nav-page="analyzer" href="analyzer.php">Website Analyzer</a></li>
+              <li><a class="nav-link" data-nav-page="register" href="register.html">Profile</a></li>
+              <li><a class="nav-link" href="#contact">Help</a></li>
+              <li><a class="nav-link logout" href="index.html">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn tooltip" type="button" data-theme-toggle data-tooltip="Change theme" aria-label="Switch theme">☾</button>
+        <button class="icon-btn tooltip" type="button" data-notification-toggle data-tooltip="Notifications" aria-label="Open notifications" aria-expanded="false">♢<span class="notification-dot" aria-hidden="true"></span></button>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="notification-panel" data-notification-panel aria-label="Notifications">
+    <div class="cluster space-between"><h3>Notifications</h3><span class="status status-active">3 new</span></div>
+    <ul class="announcement-list" style="margin-top:1rem">
+      <li class="announcement"><strong>Payment reminder</strong><p>Internet bill is due in 3 days.</p><time>10 minutes ago</time></li>
+      <li class="announcement"><strong>Monthly report ready</strong><p>Your September summary is available.</p><time>1 hour ago</time></li>
+      <li class="announcement"><strong>Academic demo</strong><p>All transactions are fictional simulations.</p><time>Today</time></li>
+    </ul>
+  </aside>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy animate-slide">
+          <span class="eyebrow">One platform. Complete clarity.</span>
+          <h1>Payments managed with <span class="hero-title-accent">confidence.</span></h1>
+          <p>DigitalPay brings wallets, bills, beneficiaries, transaction tracking, reports and secure academic simulations into one thoughtful workspace.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary animate-bounce" href="dashboard.html">Open dashboard <span aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="register.html">Create demo account</a>
+          </div>
+          <div class="trust-row"><span>No real money</span><span>Accessible by design</span><span>Privacy-aware demo</span></div>
+        </div>
+        <div class="hero-visual animate-zoom">
+          <img src="images/fintech-illustration.svg" alt="Illustration of a DigitalPay wallet dashboard with a simulated payment confirmation">
+          <div class="floating-chip"><span class="status status-successful">Protected</span> Simulated payments only</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm surface" aria-label="Platform statistics">
+      <div class="container stats-grid">
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Total Users</span><span class="stat-icon">◎</span></div><div class="stat-value" data-counter="1248">0</div><div class="stat-meta">Fictional demo profiles</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Active Users</span><span class="stat-icon">◉</span></div><div class="stat-value" data-counter="986">0</div><div class="stat-meta text-success">↑ 8.4% this month</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Wallet Balance</span><span class="stat-icon">₹</span></div><div class="stat-value" data-counter="48520" data-prefix="₹">0</div><div class="stat-meta">Demo balance</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Total Transactions</span><span class="stat-icon">↗</span></div><div class="stat-value" data-counter="8742">0</div><div class="stat-meta">Across all categories</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Successful Payments</span><span class="stat-icon">✓</span></div><div class="stat-value" data-counter="8296">0</div><div class="stat-meta">94.9% success rate</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Pending Payments</span><span class="stat-icon">◷</span></div><div class="stat-value" data-counter="23">0</div><div class="stat-meta">Awaiting demo processing</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Notifications</span><span class="stat-icon">♢</span></div><div class="stat-value" data-counter="3">0</div><div class="stat-meta">Unread alerts</div></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-label">Pending Tasks</span><span class="stat-icon">≡</span></div><div class="stat-value" data-counter="5">0</div><div class="stat-meta">2 bills due soon</div></article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Welcome to DigitalPay</span>
+          <h2>A coherent full-stack payment laboratory.</h2>
+          <p>DigitalPay is a fictional payment management platform designed as one continuous academic product. Each laboratory experiment expands the same interface, data model and user journey.</p>
+          <div class="card-grid" style="grid-template-columns:1fr 1fr; margin-top:1.5rem">
+            <article class="card"><h3>Our vision</h3><p>Make complex payment workflows clear, inclusive and easy to understand.</p></article>
+            <article class="card"><h3>Our mission</h3><p>Demonstrate professional frontend, backend and database practices in a safe environment.</p></article>
+          </div>
+        </div>
+        <aside class="highlight-panel reveal">
+          <span class="eyebrow">Project identity</span>
+          <h3 class="typing">Built for learning. Designed like a product.</h3>
+          <p style="margin-top:1rem">Developer: <strong>[Your Name]</strong><br>Register No: <strong>[Your Register Number]</strong><br>Department: <strong>[Your Department]</strong></p>
+          <div class="alert alert-info" style="margin-top:1.5rem">Update these academic identity placeholders before submission.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section surface" id="services">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Connected services</span><h2>Everything your demo wallet needs.</h2><p>Purpose-built modules share a common navigation, visual language and fictional data model.</p></div>
+        <div class="card-grid">
+          <article class="card interactive-card reveal"><div class="card-icon">↗</div><h3>Instant transfers</h3><p>Simulate sending and receiving money with generated transaction references.</p></article>
+          <article class="card interactive-card reveal"><div class="card-icon">▤</div><h3>Bill payments</h3><p>Organize utilities, recharges, insurance and subscriptions in one queue.</p></article>
+          <article class="card interactive-card reveal"><div class="card-icon">⌗</div><h3>QR-style payments</h3><p>Demonstrate a simple recipient-based scan-and-pay journey without collecting secrets.</p></article>
+          <article class="card interactive-card reveal"><div class="card-icon">◎</div><h3>Wallet control</h3><p>Track a fictional balance, savings targets and monthly spending progress.</p></article>
+          <article class="card interactive-card reveal"><div class="card-icon">⌕</div><h3>Transaction search</h3><p>Search, filter and inspect dynamically loaded JSON records with jQuery.</p></article>
+          <article class="card interactive-card reveal"><div class="card-icon">▥</div><h3>Website analyzer</h3><p>Inspect webpage metadata, headings, links, images and SEO resources with PHP.</p></article>
+        </div>
+        <div class="split" style="margin-top:2rem">
+          <article class="card">
+            <h3>Core features</h3>
+            <ul class="feature-list"><li>Secure academic simulations</li><li>Instant fictional transfers</li><li>Bill payment organization</li><li>Wallet management</li><li>Transaction status tracking</li></ul>
+          </article>
+          <article class="card">
+            <h3>Service flow</h3>
+            <ol class="service-list"><li>Send Money</li><li>Receive Money</li><li>Pay Bills</li><li>Recharge</li><li>Manage Beneficiaries</li></ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Latest updates">
+      <div class="container split">
+        <div class="banner-slider reveal" aria-label="DigitalPay announcements">
+          <article class="slide active"><div><span class="eyebrow">New workflow</span><h2>Build a payment queue.</h2><p>Drag bills into a queue and preserve the selection with browser storage.</p><a class="btn btn-primary" href="wallet.html">Try the wallet</a></div><div class="slide-art" aria-hidden="true"></div></article>
+          <article class="slide"><div><span class="eyebrow">Transaction center</span><h2>Filter without reloading.</h2><p>Use jQuery selectors, category filters and AJAX-powered JSON loading.</p><a class="btn btn-primary" href="transactions.html">View transactions</a></div><div class="slide-art" aria-hidden="true"></div></article>
+          <article class="slide"><div><span class="eyebrow">Developer tool</span><h2>Analyze public websites.</h2><p>Inspect metadata and page structure using the guarded PHP analyzer.</p><a class="btn btn-primary" href="analyzer.php">Open analyzer</a></div><div class="slide-art" aria-hidden="true"></div></article>
+          <div class="slider-dots"><button class="slider-dot active" type="button" aria-label="Show slide 1"></button><button class="slider-dot" type="button" aria-label="Show slide 2"></button><button class="slider-dot" type="button" aria-label="Show slide 3"></button></div>
+        </div>
+        <div>
+          <div class="section-heading"><span class="eyebrow">Latest updates</span><h2>What’s new</h2></div>
+          <ul class="announcement-list">
+            <li class="announcement"><strong>Transaction report redesigned</strong><p>Clearer categories and export-friendly printing.</p><time datetime="2026-09-21">21 Sep 2026</time></li>
+            <li class="announcement"><strong>Storage lab added</strong><p>Payment queues now persist across reloads.</p><time datetime="2026-09-18">18 Sep 2026</time></li>
+            <li class="announcement"><strong>Accessibility pass complete</strong><p>Keyboard controls and focus states improved.</p><time datetime="2026-09-15">15 Sep 2026</time></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="registration">
+      <div class="container">
+        <div class="section-heading center" style="margin-inline:auto"><span class="eyebrow">Get started</span><h2>Create a demo account.</h2><p>This short form demonstrates the Experiment 1 registration fields. The advanced HTML5 form is available on the full registration page.</p></div>
+        <form class="form-card" action="php/register.php" method="post" data-validated-form novalidate>
+          <input type="hidden" name="form_source" value="quick-registration">
+          <div class="form-grid">
+            <div class="field"><label class="required" for="quick-name">Name</label><input class="input" id="quick-name" name="name" autocomplete="name" required><span class="field-error"></span></div>
+            <div class="field"><label class="required" for="quick-email">Email</label><input class="input" id="quick-email" name="email" type="email" autocomplete="email" required><span class="field-error"></span></div>
+            <div class="field"><label class="required" for="quick-phone">Phone</label><input class="input" id="quick-phone" name="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" data-pattern-message="Enter exactly 10 digits." required><span class="field-error"></span></div>
+            <div class="field"><label class="required" for="quick-password">Password</label><input class="input" id="quick-password" name="password" type="password" minlength="8" autocomplete="new-password" required><span class="field-error"></span></div>
+            <fieldset class="field"><legend class="fieldset-label required">Gender</legend><div class="choice-row"><label class="choice"><input type="radio" name="gender" value="Female" required> Female</label><label class="choice"><input type="radio" name="gender" value="Male"> Male</label><label class="choice"><input type="radio" name="gender" value="Other"> Other</label></div><span class="field-error"></span></fieldset>
+            <div class="field"><label class="required" for="quick-dob">Date of birth</label><input class="input" id="quick-dob" name="dob" type="date" min="1940-01-01" max="2010-12-31" required><span class="field-error"></span></div>
+            <div class="field field-full"><label class="required" for="quick-address">Address</label><textarea class="textarea" id="quick-address" name="address" minlength="10" required></textarea><span class="field-error"></span></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-secondary" type="reset">Reset</button><button class="btn btn-primary" type="submit">Create demo account</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="module-title">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">Application architecture</span><h2 id="module-title">DigitalPay modules</h2></div>
+        <div class="table-wrap">
+          <table class="data-table"><thead><tr><th>Module ID</th><th>Module Name</th><th>Description</th></tr></thead><tbody>
+            <tr><td>DP-01</td><td>Dashboard</td><td>Live statistics, activity and wallet overview</td></tr>
+            <tr><td>DP-02</td><td>Wallet & Queue</td><td>Balance, progress, drag/drop and web storage</td></tr>
+            <tr><td>DP-03</td><td>Payment Center</td><td>Event-driven simulated payments and beneficiaries</td></tr>
+            <tr><td>DP-04</td><td>Transaction Center</td><td>jQuery selection, filtering, AJAX and JSON</td></tr>
+            <tr><td>DP-05</td><td>Reports</td><td>Spending summaries and printable insights</td></tr>
+            <tr><td>DP-06</td><td>Website Analyzer</td><td>Guarded PHP inspection for public URLs</td></tr>
+            <tr><td>DP-07</td><td>User Management</td><td>Prepared-statement PHP/MySQL CRUD</td></tr>
+          </tbody></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="offers">
+      <div class="container"><div class="section-heading"><span class="eyebrow">Demo offers</span><h2>Useful rewards, clearly fictional.</h2></div><div class="card-grid">
+        <article class="card interactive-card"><div class="card-icon">5%</div><h3>Utility saver</h3><p>Fictional cashback on the first simulated electricity bill this month.</p></article>
+        <article class="card interactive-card"><div class="card-icon">2×</div><h3>Learning streak</h3><p>Explore two laboratory modules and unlock a demo achievement.</p></article>
+        <article class="card interactive-card"><div class="card-icon">₹0</div><h3>No real fees</h3><p>Every operation is an academic simulation and moves no real money.</p></article>
+      </div></div>
+    </section>
+
+    <section class="section" id="security">
+      <div class="container split"><div><span class="eyebrow">Security by design</span><h2>Safe demonstrations, honest boundaries.</h2><p>DigitalPay validates form input, uses prepared database statements and rejects private-network targets in the analyzer. It deliberately never asks for payment secrets.</p><ul class="feature-list"><li>Prepared statements for database operations</li><li>Server-side validation and output escaping</li><li>Restricted image uploads</li><li>SSRF-aware URL analysis</li></ul></div><aside class="highlight-panel"><h3>Never enter</h3><ul class="plain-list"><li>Real card numbers or CVV</li><li>UPI PIN or OTP</li><li>Bank login credentials</li><li>Production API secrets</li></ul></aside></div>
+    </section>
+
+    <section class="section surface" id="contact">
+      <div class="container split">
+        <div><span class="eyebrow">Contact & help</span><h2>Questions about the project?</h2><p>Use these fictional academic contact details as placeholders and replace them before submission.</p><address class="card" style="font-style:normal"><p><strong>Email:</strong> <a href="mailto:student@example.edu">student@example.edu</a></p><p><strong>Phone:</strong> <a href="tel:+910000000000">+91 00000 00000</a></p><p><strong>Address:</strong> Department of Computer Science, Demo Campus, India</p><div class="social-links"><a href="https://github.com/" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a></div></address></div>
+        <form class="card" data-validated-form data-demo-form novalidate><div class="field"><label class="required" for="contact-email">Email</label><input class="input" id="contact-email" type="email" required><span class="field-error"></span></div><div class="field" style="margin-top:1rem"><label class="required" for="contact-message">How can we help?</label><textarea class="textarea" id="contact-message" minlength="10" required></textarea><span class="field-error"></span></div><button class="btn btn-primary" type="submit" style="margin-top:1rem">Send demo request</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><img src="images/logo-mark.svg" alt=""><span>Digital<span>Pay</span></span></a><p style="margin-top:1rem">A modern digital payment management platform created for full-stack laboratory learning.</p></div><div><h3>Explore</h3><ul class="footer-links"><li><a href="dashboard.html">Dashboard</a></li><li><a href="wallet.html">Wallet</a></li><li><a href="transactions.html">Transactions</a></li></ul></div><div><h3>Tools</h3><ul class="footer-links"><li><a href="analyzer.php">Website Analyzer</a></li><li><a href="php/users.php">User Management</a></li><li><a href="reports.html">Reports</a></li></ul></div><div><h3>Academic</h3><ul class="footer-links"><li><a href="README.md">Documentation</a></li><li><a href="#security">Security</a></li><li><a href="#contact">Help</a></li></ul></div></div><div class="footer-bottom"><span>© <span data-current-year></span> DigitalPay. Academic demonstration only.</span><span>Developer: [Your Name] · Register No: [Your Register Number]</span></div></div>
+  </footer>
+  <button class="scroll-top tooltip" type="button" data-scroll-top data-tooltip="Back to top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

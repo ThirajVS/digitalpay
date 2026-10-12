@@ -1,0 +1,13 @@
+{
+  "name": "digitalpay-academic-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A coherent full-stack academic digital payment management system covering nine laboratory experiments.",
+  "scripts": {
+    "test": "node tests/smoke-test.mjs",
+    "serve:static": "node tests/static-server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
